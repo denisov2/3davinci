@@ -1,6 +1,7 @@
 {
   "require": {
     "symfony/console": "^3.4",
+    "symfony/dotenv": "3.*",
     "mashape/unirest-php": "3.*"
   },
   "autoload": {

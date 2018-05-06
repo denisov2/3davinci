@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+/**
+ * User: denisov
+ * Author: Denisov Dmitriy denisov.dmitriy@gmail.com
+ * Time: 18:54
+ */
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use app\commands\GetUsersCommand;
+use Symfony\Component\Dotenv\Dotenv;
+
+$env = new Dotenv();
+$env->load(__DIR__.'/.env');
+
+$application = new Application();
+
+$application->add(new GetUsersCommand());
+
+$application->run();
+
