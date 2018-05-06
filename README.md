@@ -46,5 +46,5 @@ CREATE TABLE `user` (
 php main run
 
 ```
-php main migrate
+php main run
 ```
