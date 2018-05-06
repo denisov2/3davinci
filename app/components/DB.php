@@ -25,7 +25,7 @@ class DB
         if (null === self::$connection)
         {
 
-            $host = getenv('DB_USER');
+            $host = getenv('DB_HOST');
             $db   = getenv('DB_BASE');
             $user = getenv('DB_USER');
             $pass = getenv('DB_PASS');
