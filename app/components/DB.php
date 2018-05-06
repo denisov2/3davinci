@@ -25,10 +25,10 @@ class DB
         if (null === self::$connection)
         {
 
-            $host = '127.0.0.1';
-            $db   = '3davinci';
-            $user = 'root';
-            $pass = '';
+            $host = getenv('DB_USER');
+            $db   = getenv('DB_BASE');
+            $user = getenv('DB_USER');
+            $pass = getenv('DB_PASS');
             $charset = 'utf8';
 
             $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
