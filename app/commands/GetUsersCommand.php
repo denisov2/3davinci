@@ -67,6 +67,9 @@ class GetUsersCommand extends Command
                 }
                 $output->writeln("RESULTS. Created=$created, updated=$updated, no changes=$no_changes ");
             }
+        } else {
+            
+            $output->write("Git hub connection failed");
         }
     }
 }
